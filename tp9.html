@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    *{
+      margin: 0px;padding: 0px;
+      box-sizing: border-box;
+      background-color: #141414;
+    }
+    header{
+        display: flex;
+        border-bottom: 1px solid gray;
+    }
+    .head1{
+        color: #007bff;
+        width: 50%;
+        padding: 10px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 20px;
+    }
+    .head2{
+        width: 40% ;
+        padding-top: 15px;
+    }
+    .head3{
+        width: 10%;
+        padding-top: 12px;
+        padding-left: 5px;
+        color: white;
+        background-color: #007bff ;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    ul{
+        display: flex;
+        list-style: none;
+        justify-content: end;
+    }
+    ul a{
+        text-decoration: none;
+    }
+    li{
+        color: white;
+        font-size: 12px;
+        text-transform: uppercase;
+        padding-right: 15px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .nav{
+        display: flex;
+    }
+    .nav1{
+        width: 40% ;
+        padding: 10px;
+        margin-top: 30px;
+        margin-left: 100px;
+        margin-right: 20px;
+    }
+    .n-span{
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+        text-transform: capitalize;
+        font-size: 14px;
+        border: 1px solid rgb(3, 102, 160);
+        border-radius: 15px ;
+        margin-left: 5px;
+        padding: 5px 10px;
+    }
+    h1{
+        font-family: Arial, Helvetica, sans-serif;
+        text-transform: capitalize;
+        color: white;
+        padding-top: 15px;
+    }
+    p{
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+        padding-top: 15px;
+        font-size: 12px;
+    }
+    img{
+        width: 20px;
+        height: 20px;  
+    }
+    .contact-card { 
+        margin: auto;
+        margin-top: 15px;
+        background-color: #192129;
+        padding: 30px 30px;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        width: 98%; 
+        box-shadow: 0 2px 4px #192129;
+    } 
+    .icon {
+        background-color: #ffffff;
+        border-radius: 50%;
+        padding: 10px;
+        margin-right: 15px;
+        display: flex; 
+        align-items: center;
+        justify-content: center;
+    }
+    .icon img {
+        background-color: white;
+        width: 20px;
+        height: 20px; 
+    } 
+    .details { 
+        font-family: Arial, sans-serif;
+        background-color: #192129;
+    }
+    .title { 
+        font-size: 14px;
+        color: #888;
+        background-color: #192129;
+    } 
+    .phone-number { 
+        font-size: 18px;
+        color: #007bff;
+        font-weight: bold; 
+        margin-top: 5px;
+        background-color: #192129;
+    }
+    .email-card { 
+        margin: auto;
+        margin-top: 15px;
+        background-color: #192129;
+        padding: 30px 30px;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        width: 98%; 
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    } 
+    .icon {
+        background-color: #ffffff;
+        border-radius: 50%;
+        padding: 10px;
+        margin-right: 15px;
+        display: flex; 
+        align-items: center;
+        justify-content: center;
+    }
+    .icon img {
+        width: 20px;
+        height: 20px; 
+    } 
+    .details { 
+        font-family: Arial, sans-serif;
+    }
+    .title { 
+        font-size: 14px;
+        color: #888;
+    } 
+    .email { 
+        width: 10%;
+        font-size: 15px;
+        color: #007bff;
+        margin-top: 5px;
+        font-weight: 550;
+        background-color: #192129;
+    }
+    .nav2{
+        background-color: #192129;
+        width: 40%;
+        height: 398px;
+        margin-top: 30px;
+        border-radius: 10PX;
+        padding: 50px 20px;
+    }
+    input{
+        width: 48%;
+        border-radius: 10px;
+        height: 40px;
+        padding: 10px;
+        margin: 5px 2px;
+        border: none;
+        outline: none;
+    }
+    .inp{
+        width: 98%;
+        padding-bottom: 100px;
+    }
+    .btn{
+        width: 98%;
+        background-color: #007bff;
+    }
+    @media (min-width:200px) and (max-width:375px){
+        input{
+            width: 47%;
+        }
+    }
+    @media (max-width:600PX) {
+        header{
+            flex-direction: column;
+        }
+        .head1{
+            width: 100%;
+            text-align: center;
+        }
+        ul{ 
+            justify-content: space-around;
+        }
+        li{
+            text-align: center;
+            padding: 8px;
+            border-radius: 8px;
+            width: 100%;
+            height: 30px;
+        }
+        li:hover{
+            background-color: #007bff;
+        }
+        .li1{
+            color: #007bff;
+        }
+        .li1:hover{
+            color: white;
+        }
+        .head2{
+            width: 100%;
+            height: 30px;
+            padding-top: 0PX;
+        }
+        .head3{
+            width: 100%;
+            text-align: center;
+            padding-bottom: 10px;
+            margin-top: 5px;
+        }
+        .nav{
+            flex-direction: column;
+        }
+        .nav1{
+            width: 90%;
+            margin: auto;
+            margin-top: 20px;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+        .nav2{
+            width: 90%;
+            margin: auto;
+        }
+        .inp{
+        width: 98%;
+        padding-bottom: 100px;
+        }
+        .btn{
+            width: 98%;
+        }
+    }
+    @media (min-width:601px) and (max-width:849px){
+        .head3{
+            width: 15%;
+        }
+        input{
+            width: 47%;
+            margin: 1%;
+        }
+        .nav1{
+            margin-left: 5% ;
+        }
+        .nav2{
+            width: 50%;
+            
+            height: 40%;
+        }
+        .contact-card{
+            width: 100%;
+        }
+        .email-card{
+            width: 100%;
+        }
+    }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="head1">
+            <img src="./img.vs/hospital.png" alt="">
+            <span>Klinik</span>
+        </div>
+        <div class="head2">
+            <ul>
+                <a href=""><li class="li1">home</li></a>
+                <a href=""><li>about</li></a>
+                <a href=""><li>services</li></a>
+                <a href=""><li>pages</li></a>
+                <a href=""><li>contact</li></a>
+            </ul>
+        </div>
+        <div class="head3">Appointment</div>   
+    </header>
+    <div class="nav">
+        <div class="nav1">
+          <span class="n-span">appointment</span>
+          <h1>make an appointment to visit our doctor</h1>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing 
+            elit. Nihil quisquam ipsam libero officiis blanditiis 
+            sit, saepe perspiciatis error aperiam, voluptates culpa
+             architecto adipisci veniam illum similique 
+             necessitatibus porro, ipsum provident!
+          </p>
+          <div class="contact-card"> 
+            <div class="icon"> 
+              <img src="./img.vs/phonenew-receiver-silhouette (1).png" alt=""> 
+            </div>
+              <div class="details">
+                <div class="title">Call Us Now</div>
+                <div class="phone-number">+012 345 6789</div>
+              </div> 
+          </div>
+          <div class="email-card"> 
+               <div class="icon"> 
+                 <img src="./img.vs/emailnew.png" alt=""> 
+             </div>
+               <div class="details">
+                 <div class="title">Mail Us Now</div>
+                 <div class="email">info@example.com</div>
+               </div> 
+          </div>
+        </div>
+        <div class="nav2">
+          <input type="text" name="" id="" placeholder="your name">
+          <input type="text" name="" id="" placeholder="your email">
+          <input type="text" name="" id="" placeholder="your mobile">
+          <input type="text" name="" id="" placeholder="choose doctore">
+          <input type="text" name="" id="" placeholder="chosse date">
+          <input type="text" name="" id="" placeholder="chosse date">
+          <input type="text" name="" id="" placeholder="describe your problem" class="inp">
+          <input type="button" name="" id="" value="Book Appointment" class="btn">
+        </div>
+    </div>
+</body>
+</html>
